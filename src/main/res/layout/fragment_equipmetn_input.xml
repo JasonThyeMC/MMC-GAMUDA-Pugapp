@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:weightSum="2"
+    >
+
+
+    <com.jayfang.dropdownmenu.DropDownMenu
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/inputDrop"
+        android:background="@color/white"
+        android:layout_height="60dp"/>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/addEquipmentImg"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        >
+
+
+        <com.github.jorgecastilloprz.FABProgressCircle
+            android:id="@+id/equipmentFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_top_margin"
+            >
+
+            <!--Google FAB-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/equipmentfabgoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_upload"
+                app:rippleColor="@color/fab_ripple"
+                app:elevation="@dimen/fab_elevation"
+                app:borderWidth="0dp"
+
+                />
+
+        </com.github.jorgecastilloprz.FABProgressCircle>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addSerialNum"
+                android:hint="Serial Number"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addDescription"
+
+                android:hint="Description"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>

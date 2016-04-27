@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MMC-Gamuda</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rfab_rfal__float_convert_color_alpha">0.7</string>
+    <string name="title_activity_capture_image">CaptureImage</string>
+    <string name="title_activity_sign_in">SignIn</string>
+</resources>
